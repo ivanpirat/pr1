@@ -174,7 +174,11 @@ h3 {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap;
+    align-items: center;
 }
 .cricl{
     padding: 10px;
@@ -183,7 +187,7 @@ h3 {
     height: 50px;
 
     border-radius: 100%;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     align-items: center;
     justify-content: center 
@@ -193,7 +197,7 @@ h3 {
     padding: 10px;
     display: flex;
     align-items: center;
-
+    flex:1;
     color: white;
     cursor: pointer;
     
@@ -207,4 +211,15 @@ h4
 }
 .criclpassive{
     background-color: rgb(126, 126, 126);
+}
+
+@media screen and (max-width: 700px) {
+
+    .menu{
+          justify-content: start ;
+         
+    }
+    .card p {
+        height: 220px;
+    }
 }
